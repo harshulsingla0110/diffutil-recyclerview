@@ -38,14 +38,12 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val p4 = ProgrammingItem(3, "Stationary", "Blue Pens \uD83D\uDD8A")
-            val p5 = ProgrammingItem(4, "Grocery", "Cheese \uD83E\uDDC0")
-            val p6 = ProgrammingItem(5, "Grocery", "Eggs \uD83E\uDD5A")
-            val p7 = ProgrammingItem(2, "Veggies", "Tomatoes \uD83C\uDF45")
-            val p8 = ProgrammingItem(2, "Stationary", "Scissors ✂️")
+            val p4 = ProgrammingItem(4, "Grocery", "Cheese \uD83E\uDDC0")
+            val p5 = ProgrammingItem(5, "Grocery", "Eggs \uD83E\uDD5A")
+            val p6 = ProgrammingItem(6, "Stationary", "Scissors ✂️")
 
-            adapter.submitList(listOf(p4, p5, p6, p7, p8))
-        }, 2000)
+            adapter.submitList(listOf(p2, p1, p6, p4, p5, p3))
+        }, 3000)
     }
 
     private fun setupRecyclerViewAdapter() {
@@ -62,14 +60,12 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val p4 = ProgrammingItem(3, "Stationary", "Blue Pens \uD83D\uDD8A")
-            val p5 = ProgrammingItem(4, "Grocery", "Cheese \uD83E\uDDC0")
-            val p6 = ProgrammingItem(5, "Grocery", "Eggs \uD83E\uDD5A")
-            val p7 = ProgrammingItem(2, "Veggies", "Tomatoes \uD83C\uDF45")
-            val p8 = ProgrammingItem(2, "Stationary", "Scissors ✂️")
+            val p4 = ProgrammingItem(4, "Grocery", "Cheese \uD83E\uDDC0")
+            val p5 = ProgrammingItem(5, "Grocery", "Eggs \uD83E\uDD5A")
+            val p6 = ProgrammingItem(6, "Stationary", "Scissors ✂️")
 
-            adapter.submitList(listOf(p4, p5, p6, p7, p8))
-        }, 2000)
+            adapter.submitList(listOf(p2, p1, p6, p4, p5, p3))
+        }, 3000)
     }
 
 }
