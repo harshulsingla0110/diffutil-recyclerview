@@ -9,7 +9,10 @@ DiffUtil is a utility class by Google that calculates the difference between two
  This is a performance issue.
 
  ### Solution ###
- There are 2 ways 2 implement Diff Utils:
+ Solution in using DiffUtil. Now, the only added items will render. Say there were 3 previous item and then we add 3 more items, then code will only be called by
+ these 3 new items i.e. the `onBindViewHolder` will be called only for these new added items.
+ 
+ ## There are 2 ways 2 implement Diff Utils:
 
 #### 1. Recycler View Adpater ####
 - We have to implement Diff Util.
@@ -23,5 +26,5 @@ Happy coding 👨‍💻
 
 ## Demo
 <p align="center">
-<img width="300" src="https://i.ibb.co/gPx54zf/diffutil.gif">
+<img width="300" src="https://i.ibb.co/BB8SFcH/Diff-Util.gif">
 </p>
